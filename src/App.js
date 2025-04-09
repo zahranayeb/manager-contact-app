@@ -3,8 +3,10 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <h3>Manage Contact App</h3>
+      <h3 style={{ fontFamily: "Vazir" }}>اپلیکیشن مدیریت مخاطبین</h3>
       <button className='btn btn-primary data-bs-toggle'>Contact</button>
+      <br />
+      <span className='bx bxs-user'></span>
     </div>
   );
 }
