@@ -17,11 +17,11 @@ input[type="email"],
 input[type="number"] {
   color: #F8F8F4 !important;
   background-color: #44475a !important;
-  border-color: #bd93f9 !important;
+  border-color: #FFB86C !important;
 }
 
 .form-control {
   background-color: #44475a !important;
   color: #F8F8F4 !important;
-  border-color: #bd93f9 !important;
+  border-color: #FFB86C !important;
 }
