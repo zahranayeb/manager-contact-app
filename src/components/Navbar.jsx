@@ -11,8 +11,8 @@ const Navbar = () => {
                     </div>
                     {/* <div className="navbar-brand"> */}
                     <div className="col" style={{ color: FOREGROUND }}>
-                        <span style={{ color: ORANGE }}>Managment</span>{" "}
-                        Contact Web Application{" "}
+                        <span style={{ color: ORANGE }}>Contact</span>{" "}
+                        Management Web Application{" "}
                         <span style={{ color: FOREGROUND }} className='bx bxs-user'></span>{" "}
                     </div>
                     {/* </div> */}
