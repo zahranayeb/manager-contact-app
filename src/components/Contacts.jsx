@@ -1,7 +1,9 @@
 import { Fragment } from "react"
 import { CURRENTLINE, ORANGE } from "../helpers/colors"
+import Contact from "./contact/Contact"
+import NotFound from "../assets/no-found.gif"
 
-const Contacts = () => {
+const Contacts = ({ contacts }) => {
     return (
         <>
             <section className="container">
@@ -20,22 +22,22 @@ const Contacts = () => {
             </section>
             <section className="container">
                 <div className="row">
-                    <div className="col-md-6">
-                        <div style={{ backgroundColor: CURRENTLINE }} className="card">
-                            Test
-                        </div>
-                        <div style={{ backgroundColor: CURRENTLINE }} className="card">
-                            Test
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div style={{ backgroundColor: CURRENTLINE }} className="card">
-                            Test
-                        </div>
-                        <div style={{ backgroundColor: CURRENTLINE }} className="card">
-                            Test
-                        </div>
-                    </div>
+                    {
+                        contacts.length > 0 ? contacts.map(c => (
+                            <Contact key={c.id} contact={c} />
+                        )) :
+                            (
+                                <div className="text-center py-5" style={{ backgroundColor: CURRENTLINE }}>
+                                    <p className="h3" style={{ color: ORANGE }}>
+                                    !...Contact Not Found
+                                        <img src={NotFound} alt="Not Found" className="w-25" />
+                                    </p>
+                                </div>
+                            )
+                    }
+
+                    <div className="col"></div>
+
                 </div>
             </section>
         </>
