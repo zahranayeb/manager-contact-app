@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Contacts from './components/Contacts';
+import Example from './components/Example';
 
 const App = () => {
 
@@ -9,7 +10,7 @@ const App = () => {
 
   return (
     <div className="App">
-
+      <Example />
       <Navbar />
       <Contacts contacts={getContacts} />
 

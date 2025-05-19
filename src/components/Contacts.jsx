@@ -29,15 +29,12 @@ const Contacts = ({ contacts }) => {
                             (
                                 <div className="text-center py-5" style={{ backgroundColor: CURRENTLINE }}>
                                     <p className="h3" style={{ color: ORANGE }}>
-                                    !...Contact Not Found
+                                        !...Contact Not Found
                                         <img src={NotFound} alt="Not Found" className="w-25" />
                                     </p>
                                 </div>
                             )
                     }
-
-                    <div className="col"></div>
-
                 </div>
             </section>
         </>
